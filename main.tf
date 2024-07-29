@@ -6,9 +6,16 @@
 #     Name = "apple-1"
 #   }
 # }
-resource "aws_vpc" "apple-12" {
-  cidr_block = "192.0.0.0/16"
+# resource "aws_vpc" "apple-12" {
+#   cidr_block = "192.0.0.0/16"
+#   tags = {
+#     Name = "apple-12"
+#   }
+# }
+resource "aws_subnet" "apple-123" {
+  vpc_id = "vpc-060f406fff1da1a99"
+  cidr_block = "172.31.64.0/18"
   tags = {
-    Name = "apple-12"
+    Name = "apple123"
   }
 }
