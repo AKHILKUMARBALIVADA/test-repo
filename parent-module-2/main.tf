@@ -11,3 +11,9 @@ resource "aws_subnet" "yellow-12" {
   }
 }
 
+resource "aws_internet_gateway" "yellow-123" {
+  vpc_id = module.vpc.vpc_id
+  tags = {
+    Name = "yellow-123"
+  }
+}
